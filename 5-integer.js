@@ -1,2 +1,3 @@
-﻿const args = process.argv.slice(2);
-args.forEach(arg => console.log(arg));
+﻿#!/usr/bin/node
+const arg = process.argv[2];
+console.log(arg);

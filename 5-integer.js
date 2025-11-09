@@ -1,8 +1,11 @@
-#!/usr/bin/node
-const num = parseInt(process.argv[2]);
+// Get the first argument from command line
+const myNumber = process.argv[2];
 
-if (!isNaN(num)) {
-  console.log('My number: ' + num);
+// Check if an argument was provided
+if (myNumber === undefined) {
+  console.log('No number provided');
 } else {
-  console.log('Not a number');
+  // Convert it to a number
+  const number = Number(myNumber);
+  console.log('My number:', number);
 }
